@@ -37,3 +37,14 @@ Usage: gowsdl [options] myservice.wsdl
   -i    Skips TLS Verification
   -v    Shows gowsdl version
   ```
+
+### Building Netsuite
+
+Change to the cmd/gowsdl folder and run
+```
+go run ./main.go -o netsuite.go -p netsuite https://webservices.netsuite.com/wsdl/v2023_2_0/netsuite.wsdl && ./reformat.sh
+```
+
+
+```
+
